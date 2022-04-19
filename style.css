@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Dark-cyan);
+    min-height: 100vh;
+    color: var(--Dark-gray);
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-size: cover, cover;
+    background-position: left -155vw top -50vh, right -147vw bottom -55vh;
+    background-repeat: no-repeat, no-repeat;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-position: left -54vw top -48vh, right -50vh bottom -56vh;
+    }
+}
+
+@media (min-width: 1150px) {
+    body {
+        background-position: left -42vw top -90vh, right -60vh bottom -91vh;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-position: left -55vw top -90vh, right -78vh bottom -93vh;
+    }
+}
+
+.primary-text {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card {
+    background-color: white;
+    width: 88%;
+    border-radius: 20px;
+    max-width: 380px;
+    position: relative;
+    z-index: 50;
+}
+
+.hero {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.age {
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 60px;
+}
+
+.user-img {
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    top: -50px;
+}
+
+.name-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid hsl(0, 0%, 59%, 0.3);;
+    padding: 20px 40px;
+    margin-top: 40px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.stat {
+    text-align: center;
+}
